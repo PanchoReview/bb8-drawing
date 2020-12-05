@@ -1,0 +1,341 @@
+body {
+    background-color: lightblue;
+}
+
+.bb-8 {
+    color: #f5f5f5;
+    position: absolute;
+    left: 300px;
+    transform: rotate(20deg);
+}
+
+.bb-8-body {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: currentColor;
+    top: 250px;
+    overflow: hidden; 
+    transform: rotate(30deg);
+    z-index: -1;    
+}
+
+.inner-ring {
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    background-color: orange;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+}
+
+.inner-ring-white {
+    position: absolute;
+    height: 65%;
+    width: 65%;
+    border-radius: 50%;
+    background-color: currentColor;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.rectangle {
+    position: absolute;
+    height: 25%;
+    width: 10%;    
+    background-color: orange;
+}
+
+.rectangle.horizontal {
+    transform: rotate(90deg);
+}
+
+.on-top {
+    top: 0px;
+}
+
+.on-bottom {
+    bottom: 0px;
+}
+
+.on-left {
+    left: 0px;
+}
+
+.on-right {
+    right: 0px;
+}
+
+.inner-ring.on-left {
+    left: -50px;
+}
+
+.inner-ring.on-bottom {
+    bottom: -110px;
+    left: 90px;
+}
+
+.inner-ring.on-right {
+    right: -90px;
+}
+
+.inner-ring-separator {
+    position: absolute;
+    height: 25%;
+    width: 2%;    
+    background-color: gray;    
+    z-index: -2;
+}
+
+.inner-ring-separator.on-left {
+    top: 200px;
+    left: 150px;    
+    transform: rotate(-35deg);    
+}
+
+.inner-ring-separator.on-right {
+    top: 200px;
+    right: 120px;    
+    transform: rotate(35deg);    
+}
+
+.inner-ring-separator.on-bottom {
+    top: 100px;
+    left: 210px;
+    transform: rotate(-90deg);
+}
+
+.inner-ring-separator .circle {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+}
+
+.inner-ring-separator .circle.on-left {
+    left: -15px;
+}
+
+.inner-ring-separator .circle.on-right {
+    right: -15px;
+}
+
+.bb-8-head {
+    background-color: currentColor;
+    width: 250px;
+    height: 130px;
+    border-radius: 150px 150px 0px 0px;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    display: grid;
+    place-items: center;
+}
+
+.bb-8-neck {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 100%;
+    border-top: 15px solid gainsboro;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    box-sizing: border-box;
+}
+
+.white-antenna {
+    background-color: currentColor;
+    width: 3%;
+    height: 45%;
+    position: absolute;
+    top: -45%;
+    z-index: -1;
+    border-radius: 30% 30% 0 0;
+}
+
+.dark-antenna {
+    background-color: rgb(19, 19, 19);
+    width: 3%;
+    height: 70%;
+    position: absolute;
+    top: -55%;
+    left: 60%;
+    z-index: -1;
+    border-radius: 30% 30% 0 0;
+}
+
+.dark-antenna .middle{
+    height: 30%;    
+    background-color: darkgray; 
+    position: absolute;   
+    top: 50%;
+}
+
+.bb-8-face {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    background-color: currentColor;
+    border-radius: 150px 150px 0px 0px;
+    position: absolute;
+}
+
+.face-strip {
+    background-color: lightblue;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+}
+
+.face-strip.on-top {
+    top: 10%;
+}
+
+.face-strip.on-bottom {
+    bottom: 10%;
+}
+
+.center-eye {
+    background-color: rgb(19, 19, 19);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+}
+
+.center-eye .below-circle {
+    bottom: -30%;
+    right: 30%;
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    background-color: darkgrey;
+    border-radius: 50%;
+}
+
+.little-eye {
+    background-color: darkgrey;
+    width: 60%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    transform: rotate(30deg);
+    display: grid;
+    place-items: center;
+}
+
+.little-eye .circle {
+    background-color:currentColor;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.bottom-eye {
+    border: rgb(19, 19, 19) solid 2px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    display: grid;
+    place-items: center;
+}
+
+.bottom-eye .inner-eye {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(19, 19, 19);    
+    border-radius: 50%;
+    position: absolute;    
+}
+
+.orange {
+    background-color: orange;
+}
+
+.temple-strip {
+    width: 50%;
+    height: 4%;
+    position: absolute;
+    top: 30%;
+    border-top: 5px solid orange;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    box-sizing: border-box;
+}
+
+.temple-strip.on-left {
+    left: -10%;
+}
+
+.temple-strip.on-right {
+    right: -10%;
+}
+
+.cheek-strip {
+    background-color: orange;
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    bottom: 30%;    
+}
+
+.cheek-strip.on-left {
+    left: 0;
+}
+
+.cheek-strip.on-left .white-mark{
+    background-color: currentColor;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 20%;
+}
+
+.cheek-strip.on-right {
+    right: -18%;
+}
+
+.body-shadow {
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    border: 100px rgba(0, 0, 0, 0.33) solid;
+    background-color: transparent;
+    position: absolute;
+    left: -90%;
+    top: -50%;
+}
+
+.head-shadow {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 100px rgba(0, 0, 0, 0.33) solid;
+    background-color: transparent;
+    position: absolute;
+    bottom: 80%;
+    left: -8%;
+    box-sizing: border-box;
+}
